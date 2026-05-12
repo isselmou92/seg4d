@@ -1,0 +1,25 @@
+# Single-environment requirements: runs both MedSAM2 and SAM3 backends.
+# Uses torch 2.7.0 / CUDA 12.6 (the newer of the two backends).
+# MedSAM2 is compatible with torch >= 2.5; no strict upper bound.
+
+# ---------- PyTorch (install manually - see setup/setup_all.bat) ----------
+# pip install torch==2.7.0 torchvision torchaudio \
+#     --index-url https://download.pytorch.org/whl/cu126
+
+# ---------- Shared I/O and geometry ----------
+pydicom>=2.4
+nibabel>=5.0
+numpy>=1.24
+scipy>=1.10
+SimpleITK>=2.3
+scikit-image>=0.21
+Pillow>=10.0
+tqdm>=4.65
+matplotlib>=3.7
+
+# ---------- Volumetric segmentation ----------
+TotalSegmentator>=2.4
+
+# ---------- SAM3 (HuggingFace) ----------
+transformers>=4.46
+huggingface-hub>=0.26
