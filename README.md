@@ -1,6 +1,6 @@
 # seg4d - 4D medical image segmentation
 
-`seg4d` is a clean, modular pipeline for segmenting **4D MR / CT** datasets
+`seg4d` is a  modular pipeline for segmenting **4D MR / CT** datasets
 (volumetric 3D + time *and* 2D dynamic + time) of abdominal organs (liver,
 right and left kidneys). It combines:
 
